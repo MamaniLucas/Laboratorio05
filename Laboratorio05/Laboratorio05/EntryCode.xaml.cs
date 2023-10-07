@@ -15,6 +15,11 @@ namespace Laboratorio05
         public EntryCode()
         {
             InitializeComponent();
+            StackLayout stack = new StackLayout();
+            var entry = new Entrey { Text = "this is a read-only Entry"}
+            stack.Children.Add(entry);
+            Content = stack;
+         
         }
     }
 }
