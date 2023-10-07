@@ -15,6 +15,10 @@ namespace Laboratorio05
         public EditorCode()
         {
             InitializeComponent();
+            StackLayout stack = new StackLayout();
+            var MyEditor = new Editor { Text = "Iam an Editor" };
+            stack.Children.Add(MyEditor);
+            Content = stack;
         }
     }
 }
